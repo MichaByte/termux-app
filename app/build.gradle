@@ -13,7 +13,7 @@ ext {
 }
 
 android {
-    compileSdkVersion 34
+    compileSdkVersion 30
     ndkVersion = System.getenv("JITPACK_NDK_VERSION") ?: project.properties.ndkVersion
     def appVersionName = System.getenv("TERMUX_APP_VERSION_NAME") ?: ""
     def apkVersionTag = System.getenv("TERMUX_APK_VERSION_TAG") ?: ""
@@ -39,8 +39,8 @@ android {
 
     defaultConfig {
         applicationId "com.termux"
-        minSdkVersion 34
-        targetSdkVersion 34
+        minSdkVersion 30
+        targetSdkVersion 30
         versionCode 118
         versionName "0.118.0"
 
